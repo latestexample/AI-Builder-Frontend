@@ -1,0 +1,273 @@
+@import './assets/theme/_var.scss';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $basefont;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 5.7rem;
+  font-weight: 700;
+
+  @media (max-width: 1199px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  @media (max-width: 1199px) {
+    font-size: 2.2rem;
+  }
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 700;
+
+  @media (max-width: 767px) {
+    font-size: 1.8rem;
+  }
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: $textclr;
+
+  @media (max-width: 767px) {
+    font-weight: 400;
+  }
+}
+
+.text-yellow {
+  color: $blueclr !important;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
+
+a,
+span {
+  text-decoration: none;
+  display: inline-block;
+}
+
+input:-webkit-autofill, 
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: $inputbg !important;
+  -webkit-text-fill-color: $white;
+}
+
+.common_stepcard input:-webkit-autofill, 
+.common_stepcard input:-webkit-autofill:hover,
+.common_stepcard input:-webkit-autofill:focus,
+.common_stepcard input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: $inputbg !important;
+  -webkit-text-fill-color: $black;
+}
+
+input:autofill,
+input:autofill:hover,
+input:autofill:focus,
+input:autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: $inputbg !important;
+  -moz-text-fill-color: $white;
+}
+
+.common_stepcard input:autofill,
+.common_stepcard input:autofill:hover,
+.common_stepcard input:autofill:focus,
+.common_stepcard input:autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: $inputbg !important;
+  -moz-text-fill-color: $black;
+}
+
+body input:-internal-autofill-selected {
+  background: $inputbg !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $graylight;
+}
+
+.py-100 {
+  padding-top: 10rem !important;
+  padding-bottom: 10rem !important;
+
+  @media (max-width: 767px) {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+.py-150 {
+  padding-top: 15rem !important;
+  padding-bottom: 15rem !important;
+
+  @media (max-width: 1199px) {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+  }
+}
+
+.py-200 {
+  padding-top: 20rem !important;
+  padding-bottom: 20rem !important;
+
+  @media (max-width: 1199px) {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+  }
+}
+
+.table {
+  --bs-table-bg: transparent;
+}
+
+.custom-toast {
+  font-size: 1.6rem;
+  bottom: 20px;
+}
+
+.container {
+  max-width: 1330px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.btn-style {
+  height: 5.2rem;
+  border-radius: 10rem;
+  outline: none;
+  border: 1px solid $blueclr;
+  background-color: $blueclr;
+  color: $blackclr1;
+  font-size: 1.4rem; 
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+  padding: 1rem 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: normal;
+
+  &:hover {
+    color: $white;
+    border-color: $blueclr;
+  }
+
+  &.border-btn {
+    border: 1px solid $blueclr;
+    background-color: $black;
+    color: $white;
+
+    &:hover {
+      background-color: $blueclr;
+      color: $blackclr1;
+    }
+  }
+}
+
+.modal {
+  &-content {
+    background-color: $inputbg;
+    backdrop-filter: blur(5rem);
+    padding: 6rem 2rem;
+    color: $white;
+    border: 0;
+
+    @media (max-width: 767px) {
+      padding: 4rem 0rem;
+    }
+  }
+
+  &-header {
+    padding: 0;
+    border: 0;
+
+    .btn-close {
+      position: absolute;
+      right: 2.5rem;
+      top: 2.5rem;
+      color: $white;
+      filter: brightness(1) invert(0.8);
+      opacity: 1;
+
+      @media (max-width: 767px) {
+        right: 1.5rem;
+        top: 1.5rem;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

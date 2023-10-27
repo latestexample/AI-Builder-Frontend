@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+// ***** fonts *****
+$basefont: 'Plus Jakarta Sans', sans-serif;
+
+// **** colors ****
+$white: white;
+$white1: #f1f0ff;
+$whitebg: #f8f9fc;
+$whitebg1: #f2f4f7;
+$whitebg1: #f5f6fa;
+$black: black;
+$blackclr1: #171828;
+$blackclr2: rgba(0, 0, 0, 0.25);
+$blackbg: #1a1b2b;
+$greytextclr: rgba(0, 0, 0, 0.48);
+$greytextclr1: #dadada;
+$blueclr: #5d7be5;
+$bluebg: #4c68c7;
+$textclr: #a9a9a9;
+$textclr1: #6b7280;
+$borderclr: #f8f9fc;
+$inputbg: #efffff;
+$inputbgfocus: #eeffff;
+$baseclr: #1d1d1d;
+$redclr: red;
+$placeholderclr: #667085;
+$lightwhiteclr: rgba(255, 255, 255, 0.48);
+$lightwhiteclr1: rgba(255, 255, 255, 0.2);
+$inputbg: rgba(255, 255, 255, 0.07);
+$purpleclr: #ad00ff;
+$graylight: #2a2b2f;
+$gradientclr: linear-gradient(180deg, #171828 0%, #232434 100%);
+
+// **** z indexes *****
+$loaderIndex: 1057;

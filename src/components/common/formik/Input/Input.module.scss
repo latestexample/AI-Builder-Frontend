@@ -1,0 +1,73 @@
+@import '../../../../assets/theme/_var.scss';
+
+.input_group {
+  margin-bottom: 2rem;
+
+  label {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $placeholderclr;
+    margin-bottom: 1.2rem;
+  }
+
+  &_inner {
+    position: relative;
+
+    input,
+    textarea {
+      border: 0;
+      outline: none;
+      color: $white;
+      font-size: 1.6rem;
+      font-weight: 400;
+      border-radius: 4rem;
+      height: 5rem;
+      padding: 1rem 2rem;
+      background-color: $inputbg;
+      width: 100%;
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+      &:is(:hover, :focus, active) {
+        background-color: $inputbg;
+      }
+
+      &::placeholder {
+        color: $placeholderclr;
+        font-weight: 400;
+      }
+
+      &:disabled,
+      &:read-only {
+        opacity: 0.5;
+
+        ~ .lock_icon,
+        ~ .icon {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+      }
+    }
+
+    .icon {
+      position: absolute;
+      left: 0.6rem;
+      top: 50%;
+      z-index: 1;
+      transform: translateY(-50%);
+    }
+
+    .lock_icon {
+      position: absolute;
+      top: 50%;
+      cursor: pointer;
+      right: 2rem;
+      transform: translateY(-50%);
+
+      svg {
+        path {
+          fill: $placeholderclr;
+        }
+      }
+    }
+  }
+}

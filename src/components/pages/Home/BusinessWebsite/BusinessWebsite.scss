@@ -1,0 +1,60 @@
+@import '../../../../assets/theme/_var.scss';
+
+.businessWebsite {
+  &_Content {
+    .businessbtn {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 4.5rem;
+
+      @media (max-width: 575px) {
+        margin: 1rem -0.5rem 4rem;
+      }
+
+      &_Btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10rem;
+        background-color: $whitebg1;
+        margin-top: 2.8rem;
+        margin-right: 1.8rem;
+        padding: 1.4rem 2rem;
+
+        @media (max-width: 575px) {
+          margin: 1rem 0.5rem 0;
+          padding: 1.4rem 1rem;
+          width: calc(50% - 10px);
+        }
+
+        p {
+          margin-left: 0.8rem;
+          font-size: 2rem;
+          font-weight: 600;
+          color: $black;
+
+          @media (max-width: 575px) {
+            font-size: 1.6rem;
+          }
+
+          span {
+            display: flex;
+            align-items: center;
+
+            small {
+              padding-left: 0.6rem;
+              color: $blueclr;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-style {
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+    }
+  }
+}

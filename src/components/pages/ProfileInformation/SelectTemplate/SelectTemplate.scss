@@ -1,0 +1,62 @@
+@import '../../../../assets/theme/_var.scss';
+
+.selectTemplate {
+  &_templateBox {
+    display: flex;
+    margin: 0 -0.9rem 3.2rem;
+
+    span {
+      padding: 0 0.9rem;
+    }
+
+    .image-radio {
+      display: inline-block;
+      cursor: pointer;
+      padding: 4rem 1.5rem 0;
+      background-color: #ECEFF4;
+      border-radius: 2.4rem;
+      padding-bottom: 0; 
+      position: relative;
+
+      @media (max-width:575px) {
+        padding: 3rem 0.5rem 0;
+      }
+
+      .checkIcon {
+        display: none;
+        position: absolute;
+        top: 8px;
+        width: 100%;
+        text-align: center;
+        left: 0;
+
+        @media (max-width:575px) {
+          top: 4px;
+        }
+      }
+
+      &.selectcheck {
+        background-color: $blueclr;
+
+        .checkIcon {
+          display: block;
+        }
+      }
+
+      .radio-input {
+        display: none;
+      }
+
+      .radio-image {
+        border: 0;
+        transition: border-color 0.3s ease;
+      }
+    }
+
+    // /* Highlight the image when radio is checked */
+    // .radio-input:checked+.radio-image {
+    //   border-color: #007bff;
+    //   /* Change this color to your desired highlight color */
+    // }
+  }
+}

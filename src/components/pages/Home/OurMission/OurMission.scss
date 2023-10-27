@@ -1,0 +1,64 @@
+@import '../../../../assets/theme/_var.scss';
+
+.ourMission {
+  .common_Heading {
+    max-width: 75%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    p {
+      max-width: 80rem;
+      margin: 1.5rem auto 0;
+      width: 100%;
+    }
+  }
+
+  &_Box {
+    border-radius: 2.4rem;
+    background-color: $borderclr;
+    padding: 4.2rem 1.8rem;
+    margin-top: 6rem;
+
+    @media (max-width: 991px) {
+      margin-top: 3rem;
+    }
+
+    .globalIcon {
+      display: flex;
+      width: 61px;
+      height: 61px;
+      justify-content: center;
+      align-items: center;
+      background-color: $blueclr;
+      border-radius: 2rem;
+
+      svg {
+        path {
+          fill: $white;
+          circle: $white;
+        }
+      }
+    }
+
+    h6 {
+      color: $textclr1;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 28px;
+      margin: 1.2rem 0 0.8rem;
+    }
+
+    p {
+      color: $textclr;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.6rem;
+      margin-top: 1rem;
+    }
+  }
+}

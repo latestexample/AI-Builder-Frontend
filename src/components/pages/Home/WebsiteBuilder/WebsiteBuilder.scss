@@ -1,0 +1,81 @@
+@import '../../../../assets/theme/_var.scss';
+
+.websiteBuilder {
+  padding: 15rem 0 20rem;
+
+  @media (max-width: 991px) {
+    padding: 6rem 0 10rem;
+  }
+
+  @media (max-width: 767px) {
+    padding: 6rem 0 6rem;
+  }
+
+  &_Content {
+    .websiteList {
+      margin-top: 1.8rem;
+
+      &_Box {
+        display: flex;
+        align-items: center;
+        border-radius: 24px;
+        border: 1px solid $borderclr;
+        padding: 1.6rem 1.8rem;
+        margin-bottom: 1.8rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        figure {
+          margin: 0;
+          width: 61px;
+          height: 61px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2rem;
+          background-color: $whitebg;
+        }
+
+        &:hover {
+          background-color: $whitebg;
+          border-color: $whitebg;
+
+          figure {
+            background-color: $white;
+
+            svg {
+              path {
+                fill: $blueclr;
+              }
+
+              circle {
+                fill: $blueclr;
+                opacity: 0.4;
+              }
+            }
+          }
+        }
+      }
+
+      &_Text {
+        width: calc(100% - 61px);
+        padding-left: 1.2rem;
+
+        h4 {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .btn-style {
+      margin-top: 4.5rem;
+
+      @media (max-width: 767px) {
+        margin-top: 3rem;
+        width: 100%;
+      }
+    }
+  }
+}

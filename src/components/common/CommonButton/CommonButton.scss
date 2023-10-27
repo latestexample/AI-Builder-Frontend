@@ -1,0 +1,88 @@
+@import '../../../assets/theme/_var.scss';
+
+.btn-style {
+  height: 6.8rem;
+  border-radius: 10rem;
+  outline: none;
+  border: 1px solid $blueclr;
+  background-color: $blueclr;
+  color: $white;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+  padding: 1rem 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    height: auto;
+    min-height: 5rem;
+  }
+
+  &:hover {
+    background-color: $blackclr1;
+    border-color: $blueclr;
+    color: $white;
+  }
+
+  &.white-btn {
+    background-color: $white;
+    border-color: $white;
+    color: $blackclr1;
+
+    &:hover {
+      background-color: $blueclr;
+      border-color: $blueclr;
+      color: $white;
+    }
+  }
+
+  &.border-btn {
+    border: 1px solid $blueclr;
+    background-color: transparent;
+    color: $blueclr;
+
+    &:hover {
+      border: 1px solid $blueclr;
+      background-color: $blueclr;
+      color: $white;
+
+      .btn_icon {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &.white-border-btn {
+    border: 1px solid $white;
+    background-color: transparent;
+    color: $white;
+
+    &:hover {
+      border: 1px solid $black;
+      background-color: $black;
+      color: $white;
+
+      .btn_icon {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  .spinner-border {
+    border: 0.3rem solid $white;
+    border-right-color: transparent;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+    pointer-events: none;
+  }
+
+  .btn_icon {
+    display: none;
+  }
+}

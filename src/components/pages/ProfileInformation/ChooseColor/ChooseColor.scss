@@ -1,0 +1,180 @@
+@import '../../../../assets/theme/_var.scss';
+
+.chooseColor_banner {
+    background-color: #eceff4;
+    border-radius: 2.4rem;
+    min-height: 280px;
+    background-image: url("../../../../assets/images/banner_pattern.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .banner_icon {
+        text-align: center;
+        padding-top: 3.2rem;
+    }
+
+    .colorList {
+        label {
+            width: 16.28%;
+            height: 12rem;
+            border: 3px solid $white;
+            background-color: #FBECC9;
+            border-radius: 2.4rem 2.4rem 0 0;
+            margin-left: -12px;
+            cursor: pointer;
+
+            &:first-child {
+                border-radius: 2.4rem 2.4rem 0rem 2.4rem;
+                margin-left: 0px;
+            }
+
+            &:last-child {
+                border-radius: 2.4rem 2.4rem 2.4rem 0rem;
+            }
+
+            &.clrbg1 {
+                background-color: #FBECC9;
+            }
+
+            &.clrbg2 {
+                background-color: #7EB2DD;
+            }
+
+            &.clrbg3 {
+                background-color: #445E93;
+            }
+
+            &.clrbg4 {
+                background-color: #385160;
+            }
+
+            &.clrbg5 {
+                background-color: #38603C;
+            }
+
+            &.clrbg6 {
+                background-color: #605738;
+            }
+
+            &.clrbg7 {
+                background-color: #603F38;
+            }
+        }
+    }
+}
+
+.selected {
+    border: solid 3px !important;
+    border-color: #1a1b2b !important;
+}
+
+.colorPicker {
+    display: flex;
+    margin-bottom: 3rem;
+    align-items: center;
+
+    .hue_col {
+        width: 55%;
+    }
+
+    .hue-picker {
+        height: 3rem !important;
+
+        .hue-horizontal {
+            height: 3rem;
+            border-radius: 10rem;
+
+            div {
+                width: 0.5rem !important;
+                height: 3rem !important;
+                border-radius: 0 !important;
+            }
+        }
+    }
+
+    .material_col {
+        width: 45%;       
+
+        &>div {
+            width: 100% !important;
+
+            input {
+                border: 1px solid #ddd !important;
+                border-radius: 0.5rem;
+                margin-top: 1.6rem !important;
+                padding: 0.5rem 0.2rem !important;
+                text-align: center;
+                font-size: 10px !important;
+                // width: 100px !important;
+            }
+
+            &>div {
+                box-shadow: none !important;
+            }
+        }
+
+        .material-picker {
+            display: flex;
+            width: 100% !important;
+            height: auto !important;
+            padding: 0 !important;
+
+            &> div {
+                width: 100px !important;
+            }
+
+            .flexbox-fix {
+                padding-top: 0 !important;
+                padding-left: 0.8rem;
+                width: calc(100% - 100px) !important;
+
+                &> div {
+                    padding-right: 0 !important;
+                }
+
+                div {
+                    input {
+                        border: 1px solid #ddd !important;
+                        border-radius: 0.5rem;
+                        margin-top: 1.6rem !important;
+                        padding: 0.5rem 1rem !important;
+                        text-align: center;
+                        font-size: 10px !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+@media (max-width: 768px) {
+    /* Styles for the div elements on mobile screens */
+    .colorPicker {
+        .hue_col {
+            width: auto !important;
+        }
+        .material_col{
+            width: auto !important;
+        }
+      /* Your mobile-specific styles here */
+    }
+    .chooseColor_banner{
+        .colorList label{
+        width: 18.28%;
+        height: 12rem;
+        border: 3px solid white;
+        background-color: #FBECC9;
+        border-radius: 2.4rem 2.4rem 0 0;
+        margin-left: -12px;
+        cursor: pointer
+        }
+        
+    } 
+  }

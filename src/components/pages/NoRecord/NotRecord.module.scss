@@ -1,0 +1,19 @@
+@import '../../../assets/theme/_var.scss';
+.no_record {
+  background-color: $graylight;
+  text-align: center;
+  width: 100%;
+  padding: 4rem 2rem;
+
+  img {
+    margin-bottom: 2rem;
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: $white;
+    @media (max-width: 1279px) {
+      font-size: 1.8rem;
+    }
+  }
+}

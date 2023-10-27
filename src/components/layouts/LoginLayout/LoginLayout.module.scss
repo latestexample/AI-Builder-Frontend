@@ -1,0 +1,22 @@
+@import '../../../assets/theme/_var.scss';
+
+.login_layout {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: fixed;
+    bottom: -6%;
+    left: 0;
+    border-radius: 100%;
+    opacity: 0.15;
+    background: $blueclr;
+    filter: blur(109.70719146728516px);
+    width: 28.2rem;
+    height: 28.2rem;
+    flex-shrink: 0;
+    z-index: -1;
+  }
+}

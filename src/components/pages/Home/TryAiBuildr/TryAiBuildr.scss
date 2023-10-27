@@ -1,0 +1,42 @@
+@import '../../../../assets/theme/_var.scss';
+
+.try_aiBuildr {
+  .common_Heading {
+    max-width: 100rem;
+    width: 100%;
+    margin: 0 auto 4rem;
+    text-align: center;
+
+    h2 {
+      background: linear-gradient(134deg, #000 0%, rgba(0, 0, 0, 0.53) 96.88%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      max-width: 58rem;
+      margin: 1.5rem auto 0;
+      width: 100%;
+    }
+  }
+
+  .btngroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .btn-style {
+      margin: 0 1rem;
+      width: 227px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.4rem;
+
+      @media (max-width: 575px) {
+        margin: 0.5rem 1rem;
+      }
+    }
+  }
+}

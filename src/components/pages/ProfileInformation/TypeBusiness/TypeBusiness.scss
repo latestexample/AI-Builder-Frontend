@@ -1,0 +1,62 @@
+@import '../../../../assets/theme/_var.scss';
+
+.typeBusiness {
+  &_inputBox {
+    border-radius: 10rem;
+    border: 1px solid #d0d5dd;
+    background: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 2.5rem;
+    }
+
+    .searchBar {
+      color: $black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      border: 0;
+      padding: 0 0rem 0 1rem;
+      width: calc(100% - 2.5rem);
+
+      &:focus {
+        box-shadow: none;
+        outline: 0;
+      }
+
+      &::placeholder {
+        color: #667085;
+      }
+
+      .select__control {
+        padding: 0;
+        min-height: auto;
+        border: 0;
+        box-shadow: none;
+
+        &:focus {
+          box-shadow: none;
+          outline: 0;
+        }
+
+        .select__indicator-separator {
+          display: none;
+        }
+
+        .select__input-container {
+          padding: 0;
+          margin: 0;
+        }
+        .select__value-container {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

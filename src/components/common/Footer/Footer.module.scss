@@ -1,0 +1,46 @@
+@import '../../../assets/theme/_var.scss';
+
+.sitefooter {
+  &_inner {
+    padding: 3rem 0;
+    border-top: 1px solid #cecece;
+  }
+
+  p {
+    color: $black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &_Links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width: 575px) {
+      justify-content: center;
+    }
+
+    a {
+      margin-left: 1.6rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      display: inline-block;
+      color: $black;
+
+      &:hover {
+        color: $blueclr;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

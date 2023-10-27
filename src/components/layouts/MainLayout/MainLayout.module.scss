@@ -1,0 +1,14 @@
+@import '../../../assets/theme/_var.scss';
+
+.main_layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: auto;
+
+  &_inner {
+    flex: 1 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}

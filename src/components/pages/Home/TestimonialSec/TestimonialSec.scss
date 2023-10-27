@@ -1,0 +1,207 @@
+@import '../../../../assets/theme/_var.scss';
+
+.testimonialSec {
+  background: $gradientclr;
+  padding: 8.4rem 0;
+
+  .common_Heading {
+    max-width: 75%;
+    width: 100%;
+    margin: 0 auto 6rem;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    h2 {
+      background: linear-gradient(
+        134deg,
+        #fff 0%,
+        rgba(255, 255, 255, 0.53) 96.88%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      max-width: 80rem;
+      margin: 1.5rem auto 0;
+      width: 100%;
+      color: $lightwhiteclr;
+    }
+  }
+
+  .testimonial_Image {
+    figure {
+      margin: 0;
+
+      img {
+        border-radius: 2.4rem;
+      }
+    }
+  }
+
+  .testimonial {
+    &_Slider {
+      width: 490px;
+      margin-left: -70px;
+      margin-top: 1.6rem;
+      border-radius: 1.4rem;
+
+      @media (max-width: 1365px) {
+        width: auto;
+      }
+
+      @media (max-width: 991px) {
+        margin-left: 0px;
+        margin-top: 3rem;
+      }
+
+      .testimonial_Box {
+        border-radius: 1.4rem;
+        background: $white;
+        padding: 2.4rem 3rem;
+        position: relative;
+
+        &::after {
+          content: '';
+          background-image: url('../../../../assets/images/qut.svg');
+          position: absolute;
+          top: 2rem;
+          right: 3rem;
+          width: 54px;
+          height: 40px;
+          background-repeat: no-repeat;
+          background-size: 54px;
+        }
+
+        h3 {
+          color: $black;
+          font-size: 3rem;
+          font-weight: 700;
+          line-height: 3.2rem;
+          padding-right: 5.5rem;
+        }
+
+        p {
+          color: $textclr;
+          font-size: 1.6rem;
+          font-weight: 400;
+          line-height: 2.6rem;
+          margin: 1.4rem 0 3.5rem;
+        }
+
+        h4 {
+          color: $black;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+
+        span {
+          font-size: 1.6rem;
+          font-style: italic;
+          font-weight: 400;
+        }
+      }
+
+      .slick-arrow {
+        top: auto;
+        transform: none;
+        bottom: -19px;
+        border-radius: 100px;
+        background: #fff;
+        width: 61px;
+        height: 61px;
+        padding: 3.268px 2.179px;
+
+        @media (max-width: 767px) {
+          width: 51px;
+          height: 51px;
+        }
+
+        &::before {
+          color: $black;
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 12px;
+          height: 23px;
+          background-repeat: no-repeat;
+          background-size: 12px;
+          opacity: 1;
+        }
+
+        &.slick-prev {
+          left: 9rem;
+
+          @media (max-width: 1199px) {
+            left: 3rem;
+          }
+
+          @media (max-width: 767px) {
+            left: 0;
+          }
+
+          &::before {
+            background-image: url('../../../../assets/images/arrowleft.svg');
+          }
+        }
+
+        &.slick-next {
+          right: 3rem;
+
+          @media (max-width: 767px) {
+            right: 0;
+          }
+
+          &::before {
+            background-image: url('../../../../assets/images/arrowright.svg');
+          }
+        }
+      }
+
+      .slick-dots {
+        position: static;
+        margin-top: 5rem;
+        padding-left: 5.8rem;
+
+        @media (max-width: 1199px) {
+          padding-left: 0rem;
+        }
+      }
+    }
+  }
+}
+
+.slick-dots {
+  li {
+    width: auto;
+    height: auto;
+
+    button {
+      border-radius: 10rem;
+      background: $white;
+      opacity: 0.46;
+      width: 2.7rem;
+      height: 0.8rem;
+      transition: all ease-in-out 0.3s;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &.slick-active {
+      button {
+        width: 5.5rem;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../../assets/theme/_var.scss';
+
+.common_Heading {
+  h2 {
+    text-transform: capitalize;
+  }
+
+  p {
+    color: $greytextclr;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3.5rem;
+    margin-top: 1.2rem;
+
+    @media (max-width: 767px) {
+      font-size: 1.6rem;
+      line-height: 2.6rem;
+    }
+  }
+}

@@ -1,0 +1,220 @@
+@import './assets/theme/_var.scss';
+
+.common_login_screens {
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: $blackbg;
+
+  .login_Col {
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 0;
+
+    @media (max-width: 991px) {
+      height: auto;
+    }
+
+    .login_box {
+      max-width: 41rem;
+      width: 100%;
+      margin: 0rem auto;
+      position: relative;
+      padding: 2rem 1.5rem;
+
+      &_heading {
+        margin-bottom: 3.5rem;
+
+        @media (max-width: 1199px) {
+          margin-bottom: 0rem;
+        }
+
+        h2 {
+          color: $white;
+          letter-spacing: 0.2px;
+          margin-bottom: 1.7rem;
+          font-size: 3.6rem;
+          margin-top: 4.8rem;
+
+          @media (max-width: 1199px) {
+            margin-top: 3rem;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 2.6rem;
+            margin-bottom: 1.5rem;
+          }
+        }
+
+        p {
+          font-weight: 600;
+          letter-spacing: 0.2px;
+        }
+      }
+
+      .characterLimit {
+        font-size: 1.4rem;
+        color: $white;
+        line-height: 2rem;
+      }
+
+      :global {
+        .btn-style {
+          height: 5.4rem;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 2.4rem;
+        }
+      }
+
+      .donotAccount {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $placeholderclr;
+        line-height: 2rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+
+        a {
+          color: $blueclr;
+          padding-left: 0.4rem;
+        }
+      }
+    }
+
+    .login_Footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      // bottom: 1.6rem;
+      bottom: 0rem;
+      left: 0;
+      width: 50%;
+      padding: 3.2rem;
+
+      @media (max-width: 991px) {
+        padding: 3rem 2rem;
+        bottom: 0;
+        position: static;
+        width: 100%;
+      }
+
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: $placeholderclr;
+
+        svg {
+          margin-right: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .login_boxContent {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $blueclr;
+    position: relative;
+    background-image: url(./assets/images/login_vector.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    padding: 2rem 8rem;
+
+    @media (max-width: 1199px) {
+      padding: 2rem 5rem;
+    }
+
+    @media (max-width: 991px) {
+      min-height: auto;
+      padding: 5rem 5rem;
+    }
+
+    @media (max-width: 767px) {
+      padding: 5rem 1.5rem;
+      min-height: auto;
+    }
+
+    &_Inner {
+      margin: 0 auto;
+      max-width: 52rem;
+      width: 100%;
+
+      .starticon {
+        width: 8rem;
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        color: $white;
+        font-weight: 500;
+        font-size: 5.5rem;
+        line-height: 6.5rem;
+        letter-spacing: -1.2px;
+        text-transform: capitalize;
+
+        @media (max-width: 1199px) {
+          font-size: 3.5rem;
+          line-height: 4.5rem;
+        }
+      }
+
+      p {
+        color: #eaecf0;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 2.8rem;
+        margin: 2rem 0;
+      }
+    }
+
+    .loginUser {
+      display: flex;
+      align-items: center;
+
+      .userImage {
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 10rem;
+          border: 1.5px solid $white;
+          margin-left: -15px;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+
+      span {
+        color: #eaecf0;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.6rem;
+        margin: 2.5rem 0;
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  .arrowVector {
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 350px;
+
+    @media (max-width: 1199px) {
+      display: none;
+    }
+  }
+}

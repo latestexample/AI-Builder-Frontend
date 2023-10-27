@@ -1,0 +1,39 @@
+@import '../../../assets/theme/_var.scss';
+
+.header {
+  position: relative;
+  padding: 2.4rem 0rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+
+  :global {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &_Signupbtn {
+    a {
+      border-radius: 10rem;
+      background: $lightwhiteclr1;
+      width: 11.8rem;
+      padding: 10px 15.45px 10px 16px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2.4rem;
+      text-align: center;
+      display: inline-block;
+      color: $white1;
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        background-color: $blueclr;
+      }
+    }
+  }
+}
